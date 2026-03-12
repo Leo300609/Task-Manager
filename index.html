@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Master Pro - Com Agendamento</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="todo-wrapper">
+      <header>
+        <h1>Minhas Tarefas</h1>
+        <p>Organize os seus compromissos</p>
+      </header>
+
+      <div class="input-group">
+        <div class="inputs-col">
+          <input type="text" id="task-input" placeholder="O que vamos fazer?" />
+          <input type="datetime-local" id="task-date" />
+        </div>
+        <button id="add-btn"><i class="fas fa-plus"></i></button>
+      </div>
+
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">Todas</button>
+        <button class="filter-btn" data-filter="pending">Pendentes</button>
+        <button class="filter-btn" data-filter="completed">Concluídas</button>
+      </div>
+
+      <ul id="task-list"></ul>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
